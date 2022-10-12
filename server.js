@@ -51,6 +51,10 @@ app.use((error, req, res, next) => {
   })
 })
 
+app.use("/", (req, res) => {
+  res.json({ message: "Server is ready!" })
+})
+
 const server = app.listen(PORT, (error) => {
   if (error) {
     return console.log(error)
