@@ -65,7 +65,7 @@ const server = app.listen(PORT, (error) => {
 const io = new Server(server, {
   pingTimeout: 60000,
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://chat-app-mern-frontend.vercel.app",
   },
 })
 
